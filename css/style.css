@@ -1,24 +1,26 @@
-body{
-    margin: 0px;
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
 }
 
-#main-heading
-{
-    color:#E8178A;
+/* Main Heading */
+#main-heading {
+    color: #E8178A;
     text-align: center;
     margin: 10px;
     padding: 20px;
 }
 
-.navbar
-{
-
+/* Navbar Styling */
+.navbar {
     background-color: #E8178A;
     padding: 10px;
 }
 
-.navbar ul
-{
+.navbar ul {
     list-style-type: none;
     padding: 5px;
     width: 80%;
@@ -26,13 +28,12 @@ body{
     overflow: hidden;
 }
 
-.navbar ul li
-{
+.navbar ul li {
     text-align: center;
+    float: left;
 }
 
-.navbar a
-{
+.navbar a {
     color: white;
     text-decoration: none;
     padding: 0px;
@@ -42,59 +43,54 @@ body{
     display: block;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background-color: #bd2079;
 }
 
-.navbar li{
-    float: left;
-}
-
+/* Flexbox styling for sections: Text on the left, image on the right */
 .article {
     display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-left: 30px;
-    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+/* Text Styling */
+article {
+    width: 60%;
+    padding-right: 20px;
 }
 
 h2 {
-    font-size: 18px ;
+    font-size: 22px;
     color: #E8178A;
     margin-bottom: 1px;
 }
 
-h3 {
-    font-weight: bold;
-}
-
-p{
+p {
     font-size: 17px;
-    color: #333333; 
+    color: #333333;
 }
 
-body{background-color: white;}
-    
-        #pic1{
-            width: 300px;
-            float: left;
-        }
-        
-        .pic{
-            width: 300px;
-            margin: 30px;
-            float: right;
-        }
-        #pic2{
-            width: 300px;
-            margin: 30px;
-            position: absolute;
-            left: 71.5%;
-            top: 180%;
-        }
-        footer{
-            background-color: #E8178A;
-            padding: 100px;
-            margin: 0px;
-            text-align: left; 
-        }
+/* Image Styling */
+figure {
+    width: 35%;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #E8178A;
+    padding: 50px;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
