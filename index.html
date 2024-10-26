@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naeem Ahmad University</title>
+    <meta name="author" content="Naeem Ahmad"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/Logo maker project2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Logo maker project2.png" />
 </head>
+
 <body>
     <header>
         <nav>
+            <span class="hamburger" onclick="toggleMenu()">☰</span>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Information-Technology.html">Information Technology</a></li>
@@ -21,6 +26,12 @@
         </nav>
     </header>
 
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav ul").classList.toggle("show");
+        }
+    </script>
+
     <section>
         <h1>Naeem Ahmad University</h1>
 
@@ -28,14 +39,19 @@
             <h2>Students have difficulty finding reliable study resources online</h2>
             <section class="text-content">
                 <p>
-                    Students often struggle to find reliable study materials online. There are many websites and resources, but not all of them are accurate or useful. It’s easy to get lost in a sea of low-quality notes, unclear videos, and outdated practice questions. This wastes a lot of time and causes frustration, especially when preparing for exams.
-                </p>
-                <p>
-                    What students really need is a single, easy-to-use platform with all the high-quality resources they need in one place. This would help them find trustworthy notes, helpful videos, and effective quizzes quickly. With better access to reliable materials, students can spend less time searching and more time focusing on learning and improving their grades.
+                    Students often struggle to find reliable study materials online. There are many websites and
+                    resources, but not all of them are accurate or useful.
+                    It’s easy to get lost in a sea of low-quality notes, unclear videos, and outdated practice
+                    questions. This wastes a lot of time and causes frustration,
+                    especially when preparing for exams. What students really need is a single, easy-to-use platform
+                    with all the high-quality resources they need in one place.
+                    This would help them find trustworthy notes, helpful videos, and effective quizzes quickly. With
+                    better access to reliable materials, students can spend less
+                    time searching and more time focusing on learning and improving their grades.
                 </p>
             </section>
             <figure>
-                <img src="img/1img.jpeg" alt="SFR" class="content-img">
+                <img src="img/1img.jpeg" alt="SFR" title="Stress" class="content-img">
             </figure>
         </article>
 
@@ -43,42 +59,58 @@
             <h2>Why a Single Platform Can Make a Difference</h2>
             <section class="text-content">
                 <p>
-                    Having one platform where students can access all the study materials they need can solve many of these problems. Instead of jumping from website to website or app to app, students can rely on a single source for high-quality materials. This saves them time and ensures they are getting the best possible information.
+                    Having one platform where students can access all the study materials they need can solve many of
+                    these problems. Instead of jumping from website to website or app to app,
+                    students can rely on a single source for high-quality materials. This saves them time and ensures
+                    they are getting the best possible information.
                 </p>
-                <p><strong>Here’s why a single, easy-to-use platform is a game-changer:</strong></p>
             </section>
             <figure>
-                <img src="img/2img.jpeg" alt="openbook" class="content-img">
+                <img src="img/2img.jpeg" alt="openbook" title="Open book" class="content-img">
             </figure>
         </article>
 
         <section class="content">
             <article>
-                <h3>Quality Control</h3>
+                <h2>Quality Control</h2>
                 <section class="text-content">
                     <p>
-                        On a centralized platform, all study materials can be vetted and approved by qualified educators. This ensures that students are only accessing accurate and up-to-date information, which reduces confusion and helps them learn effectively. The content could also be aligned with curricula, so students can feel confident that they are studying the right material for their exams.
+                        On a centralized platform, all study materials can be vetted and approved by qualified
+                        educators. This ensures that students are only accessing accurate and up-to-date information,
+                        which reduces confusion and helps them learn effectively. The content could also be aligned with
+                        curricula, so students can feel confident that they are studying the right material
+                        for their exams.
                     </p>
                 </section>
                 <figure>
-                    <img src="img/3img.jpeg" alt="QC" class="content-img">
+                    <img src="img/3img.jpeg" alt="QC" title="Quality check" class="content-img">
                 </figure>
             </article>
 
             <article>
-                <h3>Better Organization</h3>
+                <h2>Better Organization</h2>
                 <section class="text-content">
                     <p>
-                        With all resources in one place, students can easily organize their study sessions. They can quickly find materials related to the subject they are working on without getting distracted by other websites or irrelevant content. This leads to more focused and productive study sessions.
+                        With all resources in one place, students can easily organize their study sessions. They can
+                        quickly find materials related to the subject they are working on without getting distracted by
+                        other websites or irrelevant content.
+                        This leads to more focused and productive study sessions.
                     </p>
                 </section>
             </article>
         </section>
     </section>
 
+    
+    <section class="cookies-message">
+        <p>This website uses cookies to ensure you get the best experience on our website. <button
+                onclick="this.parentElement.style.display='none'">Accept</button></p>
+    </section>
+
     <footer>
-        Naeem Ahmad University<br>
-        All Rights Reserved &copy; 2024 NAU
+        Naeem Ahmad University
+        &amp;All Rights Reserved &copy; 2024 NAU &#174;
     </footer>
 </body>
+
 </html>

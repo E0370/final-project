@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naeem Ahmad University</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Information-Technology</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/Logo maker project2.png" />
 </head>
+
 <body>
     <header>
-        <img src="img/logo.png" alt="NAU Logo" class="logo">
         <nav>
+            <span class="hamburger" onclick="toggleMenu()">☰</span>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Information-Technology.html">Information Technology</a></li>
@@ -22,57 +23,77 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <h1>Information Technology</h1>
-            <p>Finding good study resources online for Information Technology (IT) can be tricky because there’s so much information available...</p>
-        </section>
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav ul").classList.toggle("show");
+        }
+    </script>
 
-        <section class="resources">
-            <article>
-                <h2>Microsoft Learn</h2>
-                <img src="img/microsoft.jpeg" alt="Microsoft Learn">
-                <p><strong>Platform:</strong> Microsoft Learn</p>
-                <p><strong>Why it's important:</strong> This is the official learning platform from Microsoft, making it one of the most trusted and reliable sources for learning IT skills. It covers everything from basic IT concepts to advanced topics like cloud computing, Azure, and C# programming. You can follow structured learning paths, which makes it perfect for beginners and intermediate learners.</p>
-                <p><strong>Key features:</strong> Free, interactive, with hands-on labs and certifications.</p>
-            </article>
-            
-            <article>
-                <h2>Coursera</h2>
-                <img src="img/coursera.jpeg" alt="Coursera">
-                <p><strong>Platform:</strong> Coursera</p>
-                <p><strong>Why it's important:</strong> Coursera offers courses from top universities and companies...</p>
-                <p><strong>Key features:</strong> University-quality education, free auditing, and certificates available.</p>
-            </article>
+    <section>
+        <h1>Information Technology</h1>
 
-            <article>
-                <h2>W3Schools</h2>
-                <img src="img/w3school.jpeg" alt="W3Schools">
-                <p><strong>Platform:</strong> W3Schools</p>
-                <p><strong>Why it's important:</strong> W3Schools is perfect for beginners who want to learn web development and basic programming...</p>
-                <p><strong>Key features:</strong> Beginner-friendly, interactive coding practice.</p>
-            </article>
+        <article>
+            <h2>Microsoft</h2>
+            <section class="text-content">
+                <p>
+                <p><strong>Platform:</strong></p>Microsoft Learn
+                Why it’s important: This is the official learning platform from Microsoft, making it one of the most
+                trusted and reliable sources for learning IT skills. It covers everything from basic IT concepts to
+                advanced topics like cloud computing, Azure, and C# programming. You can follow structured learning
+                paths, which makes it perfect for beginners and intermediate learners.
+                Best for: Programming (C#, .NET), Cloud Computing (Azure), and Microsoft Technologies.
+                Key features: Free, interactive, with hands-on labs and certifications.
+                </p>
+            </section>
+            <figure>
+                <img src="img/microsoft.jpeg" alt="Microsoft" title="Learn Microsoft" class="content-img">
+            </figure>
+        </article>
 
-            <article>
-                <h2>FreeCodeCamp</h2>
-                <img src="img/freecode.jpeg" alt="FreeCodeCamp">
-                <p><strong>Platform:</strong> FreeCodeCamp</p>
-                <p><strong>Why it's important:</strong> FreeCodeCamp is a completely free platform focused on learning web development...</p>
-                <p><strong>Key features:</strong> Project-based learning, large community for support.</p>
-            </article>
-          <article>
-            <h2>Tips for Learning IT Online</h2>
-                <p>Start with one topic. Don’t try to learn everything at once
-                Prioritize hands-on practice. Try to solve code problems or work on small projects
-                Join online communities like Stack Overflow or Reddit
-                Be consistent. You can ask questions and get help when you’re stuck.</p>
-            </article>
-        </section>
-    </main>
+        <article>
+            <h2>Coursera</h2>
+            <section class="text-content">
+                <p>
+                <p><strong>Platform:</strong></p> Coursera
+                Why it’s important: Coursera offers courses from top universities and companies like Google and IBM.
+                This makes it one of the best places to learn IT fundamentals, cybersecurity, data science, and
+                programming from real experts. You can audit many courses for free, and the flexibility to learn at your
+                own pace is a huge plus.
+                Best for: High-quality, professional IT courses from universities (cybersecurity, programming, data
+                science).
+                Key features: University-quality education, free auditing, and certificates available.
+                </p>
+            </section>
+            <figure>
+                <img src="img/coursera.jpeg" alt="Coursera" title="Coursera Academy" class="content-img">
+            </figure>
+        </article>
+
+
+        <article>
+            <h2>W3schools</h2>
+            <section class="text-content">
+                <p>
+                <p><strong>Platform:</strong></p> W3Schools
+                Why it’s important: W3Schools is perfect for beginners who want to learn web development and basic
+                programming. It offers simple, step-by-step tutorials on languages like HTML, CSS, JavaScript, SQL, and
+                Python. It’s easy to follow and great for anyone just starting out, with plenty of examples and
+                interactive coding exercises.
+                Best for: Beginners learning web development (HTML, CSS, JavaScript) and programming (Python, C#).
+                Key features: Free, beginner-friendly, interactive coding practice.
+                </p>
+            </section>
+            <figure>
+                <img src="img/w3school.jpeg" alt="w3school" title="W3Schools" class="content-img">
+            </figure>
+        </article>
+    </section>
+    </section>
+
     <footer>
-        Naeem Ahmad University<br>
-        All Rights Reserved &copy; 2024 NAU
+        Naeem Ahmad University
+        &amp;All Rights Reserved &copy; 2024 NAU &#174;
     </footer>
-    </body>
-    </html>
-    
+</body>
+
+</html>
