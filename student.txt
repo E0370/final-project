@@ -1,0 +1,5 @@
+Student name: Ehtisham Ahmad  
+Student number: 732625 
+Student class: IT1E
+GitHub Repository: https://github.com/E0370/final-project.git
+GitHub Pages URL: https://e0370.github.io/final-project/
